@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-07T15:04:23 IST" name="Default suite" finished-at="2023-12-07T15:05:37 IST" duration-ms="73578">
+    <groups>
+    </groups>
+    <test started-at="2023-12-07T15:04:23 IST" name="Default test" finished-at="2023-12-07T15:05:37 IST" duration-ms="73578">
+      <class name="TestCases.FlightSearch">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:04:20 IST" name="LaunchTheBrowser" finished-at="2023-12-07T15:04:23 IST" duration-ms="3795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method is-config="true" signature="OpenTheApplication()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:04:23 IST" name="OpenTheApplication" finished-at="2023-12-07T15:04:27 IST" duration-ms="3354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenTheApplication -->
+        <test-method is-config="true" signature="deleteAdds()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:04:27 IST" name="deleteAdds" finished-at="2023-12-07T15:04:32 IST" duration-ms="5432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAdds -->
+        <test-method signature="SearchWithValidValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:04:34 IST" name="SearchWithValidValues" data-provider="GetValidSearchTestData" finished-at="2023-12-07T15:04:57 IST" duration-ms="23132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[04-12-2023]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2,1,0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Economy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchWithValidValues -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:04:57 IST" name="GenerateReport" finished-at="2023-12-07T15:04:57 IST" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchWithValidValues status=SUCCESS method=FlightSearch.SearchWithValidValues(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method signature="bookAFlight()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:04:57 IST" name="bookAFlight" finished-at="2023-12-07T15:05:02 IST" depends-on-methods="TestCases.FlightSearch.SearchWithValidValues" duration-ms="5478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAFlight -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:02 IST" name="GenerateReport" finished-at="2023-12-07T15:05:03 IST" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=bookAFlight status=SUCCESS method=FlightSearch.bookAFlight()[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method signature="selectTripSecureOption(java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:03 IST" name="selectTripSecureOption" data-provider="GetTripSecureOption" finished-at="2023-12-07T15:05:04 IST" depends-on-methods="TestCases.FlightSearch.bookAFlight" duration-ms="988" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTripSecureOption -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:04 IST" name="GenerateReport" finished-at="2023-12-07T15:05:04 IST" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectTripSecureOption status=SUCCESS method=FlightSearch.selectTripSecureOption(java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method signature="ProvidePassengerDetails(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:04 IST" name="ProvidePassengerDetails" data-provider="GetPassengerDetails" finished-at="2023-12-07T15:05:13 IST" depends-on-methods="TestCases.FlightSearch.selectTripSecureOption" duration-ms="8717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhuvana Ram FEMALE,Jayakumar Ravi MALE,Revathy Vennimalai FEMALE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Manjula Ram FEMALE,Ram Govind MALE,Tamizh Ram FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pranav Adithya MALE 10-October-2022,Harsha Karthick FEMALE 12-May-2022,Aaradhya Venni FEMALE 02-Jan-2023]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProvidePassengerDetails -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:13 IST" name="GenerateReport" finished-at="2023-12-07T15:05:13 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProvidePassengerDetails status=SUCCESS method=FlightSearch.ProvidePassengerDetails(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method signature="ProvideInvoiceDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:13 IST" name="ProvideInvoiceDetails" data-provider="GetInvoiceDetails" finished-at="2023-12-07T15:05:20 IST" depends-on-methods="TestCases.FlightSearch.ProvidePassengerDetails" duration-ms="6565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[91]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7708522323]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[603204]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[And]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProvideInvoiceDetails -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:20 IST" name="GenerateReport" finished-at="2023-12-07T15:05:20 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProvideInvoiceDetails status=SUCCESS method=FlightSearch.ProvideInvoiceDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method signature="SelectionOfSeatAndMeal()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:20 IST" name="SelectionOfSeatAndMeal" finished-at="2023-12-07T15:05:30 IST" depends-on-methods="TestCases.FlightSearch.ProvideInvoiceDetails" duration-ms="9674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectionOfSeatAndMeal -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:30 IST" name="GenerateReport" finished-at="2023-12-07T15:05:30 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectionOfSeatAndMeal status=SUCCESS method=FlightSearch.SelectionOfSeatAndMeal()[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method signature="SelectAddOnOptions()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:30 IST" name="SelectAddOnOptions" finished-at="2023-12-07T15:05:36 IST" depends-on-methods="TestCases.FlightSearch.SelectionOfSeatAndMeal" duration-ms="6140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectAddOnOptions -->
+        <test-method is-config="true" signature="GenerateReport(org.testng.ITestResult)[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:36 IST" name="GenerateReport" finished-at="2023-12-07T15:05:37 IST" duration-ms="816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectAddOnOptions status=SUCCESS method=FlightSearch.SelectAddOnOptions()[pri:0, instance:TestCases.FlightSearch@15043a2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateReport -->
+        <test-method is-config="true" signature="CloseTheApplication()[pri:0, instance:TestCases.FlightSearch@15043a2f]" started-at="2023-12-07T15:05:37 IST" name="CloseTheApplication" finished-at="2023-12-07T15:05:39 IST" duration-ms="1715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheApplication -->
+      </class> <!-- TestCases.FlightSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<encoding>UTF-8</encoding>
+		<documentTitle>Test Report</documentTitle> <!-- This title will be
+		displayed as browser title for the page -->
+		<reportName>Automation Report</reportName> <!-- This will be your report
+		heading -->
+		<reportHeadline>MakeMyTrip</reportHeadline>
+		<theme>STANDARD</theme>
+<scripts>
+<![CDATA[
+$(document).ready(function() {
+            $('#parentWithoutNodes').prop("checked", true).click();
+$('#test-count-setting > div.modal-footer > a')[0].click();
+});
+]]>
+</scripts>
+	</configuration>
+</extentreports>
