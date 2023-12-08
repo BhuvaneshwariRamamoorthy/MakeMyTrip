@@ -1,5 +1,8 @@
 package TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -102,7 +105,7 @@ public class FlightSearch extends BrowserLaunch {
 		String ToCityName = s.GetToLocation();
 		s.ClickOnSearchButton();
 		sp.WaitAndClickOnPopup();
-		Assert.assertEquals(sp.GetActualSearchText(), sp.ExpectedSearchText(FromCityName, ToCityName));
+		AssertJUnit.assertEquals(sp.GetActualSearchText(), sp.ExpectedSearchText(FromCityName, ToCityName));
 
 	}
 
@@ -115,7 +118,7 @@ public class FlightSearch extends BrowserLaunch {
 		 * And Complete your Booking Page is opened
 		 */
 		String bookingHeader = sp.BookAFlight();
-		Assert.assertEquals(bookingHeader, "Complete your booking");
+		AssertJUnit.assertEquals(bookingHeader, "Complete your booking");
 
 	}
 
@@ -127,7 +130,7 @@ public class FlightSearch extends BrowserLaunch {
 		 * option
 		 */
 		boolean tripSecureMessagereceived = fs.tripSecure(secureOption);
-		Assert.assertEquals(tripSecureMessagereceived,true);
+		AssertJUnit.assertEquals(tripSecureMessagereceived,true);
 	}
 
 	@Test(dependsOnMethods = "selectTripSecureOption",dataProvider="GetPassengerDetails",dataProviderClass = MakeMyTripTestData.class)
